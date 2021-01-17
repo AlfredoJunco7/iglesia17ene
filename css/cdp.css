@@ -190,7 +190,8 @@ main {
         font-weight: 300;
     }
     section {
-        width: 90%;
+        width: 80%;
+        margin: auto;
     }
     section h4 {
         width: 100%;
@@ -238,7 +239,7 @@ main {
     }
     section p {
         margin-top: 30px;
-        width: 95%;
+        width: 100%;
         /*text-align: center;*/
     }
     main {
@@ -288,7 +289,7 @@ main {
     }
     section p {
         margin-top: 30px;
-        width: 95%;
+        width: 100%;
         /*text-align: center;*/
     }
     main {
