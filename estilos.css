@@ -1,0 +1,1057 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    background: #ffffff;
+}
+p {
+    font-size: 18px;
+    font-weight: 300;
+    color: #444141;
+}
+
+
+
+/*banner*/
+
+.banner {
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(hsla(0, 0%, 0%, 0.2),hsla(0, 0%, 0%, 0.2)) , url(./imagenes/header-trigo.jpg);
+    object-fit: cover;
+    background-size: cover;
+    background-position: left;
+}
+.textos-header {
+    width: 100%;
+    height: 70vh;
+    margin: auto;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+}
+.textos-header h2 {
+    color: blue;
+    font-size: 45px;
+    font-family: cursive;
+    font-weight: 300;
+    text-align: center;
+    width: 95%;
+    animation: moverDerecha 2s ease-in;
+}
+.textos-header h1 {
+    color: #0000ff;
+    font-size: 60px;
+    font-weight: 400;
+    text-align: center;
+    width: 95%;
+    animation: moverIzquierda 2s ease-in;
+}
+.banner img {
+    width: 190px;
+    height: 210px;
+}
+.banner span img{
+    width: 30px;
+    height: 30px;
+    margin-top: 135px;
+    left: 50%;
+    position: relative;
+}
+#nav {
+    width: 55%;
+    height: 100vh;
+    position: fixed;
+    right: -55%;
+    top: 0;
+    background: #3f51b5;
+    z-index: 2;
+    transition: 0.7s;
+}
+nav ul li {
+    list-style: none;
+    margin: 50px 35px;
+}
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    font-weight: 300;
+}
+#menubtn {
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    position: fixed;
+    right: 45px;
+    top: 20px;
+    border-radius: 3px;
+    z-index: 3;
+    cursor: pointer;
+}
+#menubtn img {
+    width: 30px;
+    margin-top: 15px;
+}
+nav ul li a:hover {
+    color: #444141;
+}
+
+
+/*@keyframes*/
+
+@keyframes moverIzquierda {
+    0% {
+        opacity: 1;
+        transform: translateX(-200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes moverDerecha {
+    0% {
+        opacity: 1;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+
+   /*bienvenidos*/
+
+.bienvenidos {
+    width: 100%;
+}
+.bienvenidos h2 {
+    font-family: cursive;
+    font-size: 40px;
+    text-align: center;
+    align-items: center;
+    font-weight: 600;
+    margin-top: 60px;
+    letter-spacing: 1.2px;
+    color: black;
+    animation: animacion 0.8s alternate ease-in infinite;
+}
+
+@keyframes animacion {
+    0% {
+        opacity: 0.3;
+        transform: translateY(12px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(-10);
+    }
+}
+
+/*iglesia*/
+
+.quienes-somos {
+    width: 80%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.quienes-somos h3 {
+    font-size: 25px;
+    margin-bottom: 10px;
+    color:  #170aca;
+}
+.iglesia {
+    width: 50%;
+}
+.pastores {
+    width: 50%;
+}
+.iglesia p {
+    width: 95%;
+}
+.pastores p {
+    width: 95%;
+}
+.quienes-somos .pastores img {
+    width: 80%;
+    height: 180px;
+    margin-top: 15px;
+    left: 8%;
+    position: relative;
+    border-radius: 3px;
+    object-fit: cover;
+}
+
+
+  /*titulo nuestra*/
+
+.nuestra {
+    width: 100%;
+    margin-top: 20px;
+}
+.nuestra h2 {
+    text-align: center;
+    align-items: center;
+    font-size: 40px;
+    color: #3f51b5;
+    font-weight: 400;
+    margin-top: 60px;
+    letter-spacing: 1px;
+}
+
+
+/*vision*/
+
+.grey {
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.3),rgba(0, 0, 0, 0.3)) , url(./imagenes/vision-responsive.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: cover;
+}
+.grey h2 {
+    padding: 20px 0;
+}
+.visioniglesia {
+  width: 95%;
+  margin-top: 20px;
+}
+.vision {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+.visionletra {
+  font-size: 18px;
+  width: 85%;
+  margin: auto;
+  text-align: center;
+  color: white;
+}
+.versiculo {
+  width: 95%;
+  padding: 50px 0;
+  color: white;
+}
+.versiculodos {
+    color: white;
+    padding: 20px;
+}
+
+
+/*horarios*/
+
+
+.horarios {
+    width: 90%;
+    margin: auto;
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+.horarios h3 {
+    font-size: 25px;
+    margin-bottom: 12px;
+    color: #170aca;
+}
+.time {
+    width: 30%;
+}
+.kids {
+    width: 30%;
+}
+.tiempo img {
+    object-fit: cover;
+    width: 60%;
+    height: 300px;
+    margin-top: 30px;
+    left: 18%;
+    position: relative;
+    border-radius: 3px;
+}
+.horarios .kids a {
+    text-decoration: none;
+    color: #444141;
+    border: 1px solid #444141;
+    padding: 2px 15px;
+    display: inline-block;
+    margin-top: 10px;
+    border-radius: 2px;
+}
+.horarios .kids a:hover {
+    color: white;
+    background: #444141;
+    transition: .5s;
+}
+
+
+
+/*ministerios*/
+
+
+#marcador5 {
+    background: #ffffff;
+}
+.ministery {
+    width: 95%;
+    margin: auto;
+    margin-top: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.ministerios {
+    width: 32%;
+    border-radius: 3px;
+    padding: 20px 0;
+    margin: 25px 0;
+    border: 1.3px solid  hsla(0, 0%, 80%, 0.5);
+    box-shadow: 8px 8px 8px rgba(0,0,0,0.3);
+}
+.ministerios h3 {
+    margin: auto;
+    width: 93%;
+    font-size: 25px;
+    color: #170aca;
+}
+.ministerios p {
+    margin: auto;
+    margin-top: 10px;
+    width: 93%;
+}
+.ministerios a {
+    text-decoration: none;
+    color: #444141;
+    border: 1px solid #444141;
+    border-radius: 3%;
+    padding: 8px 15px;
+    display: inline-block;
+    margin-top: 15px;
+    color: white;
+    background: hsla(0, 2%, 26%, 0.918);
+}
+.ministerios a:hover {
+    color: #444141;
+    background: white;
+    transition: .5s;
+}
+
+
+/*CDP*/
+
+.cdp {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+.casas h3 {
+    font-size: 25px;
+    color: #3f51b5;
+    text-align: center;
+    margin-top: 20px;
+}
+.casas p {
+    text-align: center;
+}
+.textos {
+    margin-top: 20px;
+}
+.casas a {
+    text-decoration: none;
+    color: #444141;
+    border: 1px solid #444141;
+    padding: 3px 15px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: .5s;
+    border-radius: 2px;
+}
+.casas a:hover {
+    color: white;
+    background: #444141; 
+}
+
+
+/*slider*/
+
+hr {
+    width: 50%;
+    margin: auto;
+}
+#slider {
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+}
+#slider figure {
+    position: relative;
+    width: 500%;
+    margin: 0;
+    left: 0;
+    animation: 20s slider ease infinite;
+}
+#slider figure img {
+    float: left;
+    width: 20%;
+    height: 560px;
+    padding: 20px 0;
+}
+
+@keyframes slider {
+    0% {
+        left: 0;
+    }
+    20% {
+        left: 0;
+    }
+    25% {
+        left: -100%;
+    }
+    45% {
+        left: -100%;
+    }
+    50% {
+        left: -200%;
+    }
+    70% {
+        left: -200%;
+    }
+    75% {
+        left: -300%;
+    }
+    95% {
+        left: -300%;
+    }
+    100% {
+        left: -400%;
+    }
+}
+
+
+
+/*ayuda*/
+
+.ayuda {
+    width: 85%;
+    margin: auto;
+    padding: 20px 0 0 0;
+}
+.biblia h3 {
+    font-size: 25px;
+    color: #3f51b5;
+    text-align: center;
+}
+.biblia p {
+    text-align: center;
+}
+.textos {
+    margin-top: 20px;
+}
+.biblia a {
+    text-decoration: none;
+    color: #444141;
+    border: 1px solid #444141;
+    padding: 3px 15px;
+    display: inline-block;
+    margin-top: 15px;
+    transition: .5s;
+    border-radius: 2px;
+}
+.biblia a:hover {
+    color: white;
+    background: #444141; 
+}
+
+
+/*footer*/
+
+.footer {
+    margin-top: 70px;
+    width: 100%;
+    background: linear-gradient(hsla(243, 83%, 16%, 0.959), hsla(244, 86%, 28%, 0.904)) , url(./imagenes/LOGO\ LA\ TRINIDAD.png); 
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    object-fit: cover;
+    overflow: hidden;
+}
+.textosfoo {
+    width: 95%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer img {
+    width: 43px;
+    height: 27px;
+    padding: 0 10px;
+}
+.redes img {
+    width: 50px;
+    height: 30px;
+}
+.footer h3 {
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+.footer h2 {
+    font-size: 20px;
+    color: white;
+    margin-top: 30px;
+}
+.footer p {
+    color: white;
+    margin-top: 10px;
+}
+.contacto {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.redes {
+    margin-bottom: 20px;
+}
+.social {
+    margin-bottom: 20px;
+}
+
+/*responsive*/
+
+@media screen and (max-width:970px) {
+    .ministerios {
+        width: 90%;
+    }
+    .ministery {
+        display: flex;
+        justify-content: center;
+    }
+    .banner img {
+        width: 170px;
+        height: 180px;
+    }
+    .textos-header h2 {
+        font-size: 40px;
+    }
+    .textos-header h1 {
+        font-size: 50px;
+    }
+    .tiempo img {
+        object-fit: cover;
+        width: 80%;
+        height: 370px;
+        margin-top: 30px;
+        left: 10%;
+        position: relative;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width:800px) {
+    .banner img {
+        width: 160px;
+        height: 170px;
+    }
+    .textos-header h2 {
+        font-size: 35px;
+    }
+    .textos-header h1 {
+        font-size: 45px;
+    }
+    #menubtn {
+        width: 40px;
+        height: 40px;
+        text-align: center;
+        position: fixed;
+        right: 25px;
+        top: 20px;
+        border-radius: 3px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    #menubtn img {
+        width: 30px;
+        margin-top: 10px;
+    }
+    nav ul li {
+        list-style: none;
+        margin: 30px 18px;
+    }
+    nav ul li a {
+        font-size: 20px;
+    }
+    .bienvenidos h2 {
+        font-weight: 600;
+        font-size: 35px;
+        margin-top: 60px;
+    }
+    .nuestra h2 {
+        text-align: center;
+        align-items: center;
+        font-size: 37px;
+        color: #3f51b5;
+        font-weight: 400;
+        margin-top: 50px;
+        letter-spacing: 0.5px;
+    }
+    .quienes-somos {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .quienes-somos h3 {
+        font-size: 25px;
+        margin-bottom: 12px;
+        color: #3f51b5;
+    }
+    .iglesia {
+        margin: auto;
+        width: 100%;
+    }
+    .pastores {
+        margin: auto;
+        width: 100%;
+        margin-top: 40px;
+    }
+    .iglesia p {
+        width: 100%;
+    }
+    .pastores p {
+        width: 100%;
+    }
+    .quienes-somos .pastores img {
+        width: 70%;
+        height: 200px;
+        margin-top: 20px;
+        left: 0%;
+    }
+    .vision img {
+        object-fit: cover;
+        width: 80%;
+        height: 260px;
+        padding: 30px 0;
+        left: 11%;
+        position: relative;
+        border-radius: 3px;
+      }
+      .visionletra {
+        font-size: 18px;
+        width: 100%;
+        margin: auto;
+        text-align: center;
+        color: white;
+      }
+      .versiculo {
+        width: 100%;
+        padding: 50px 0;
+        color: white;
+      }
+      .versiculodos {
+          color: white;
+          padding: 20px;
+      }
+      .horarios {
+        width: 75%;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .horarios h3 {
+        font-size: 25px;
+        margin-bottom: 12px;
+        color: #170aca;
+    }
+    .time {
+        width: 90%;
+    }
+    .kids {
+        width: 90%;
+        text-align: right;
+        margin-top: 25px;
+    }
+    .tiempo img {
+        object-fit: cover;
+        width: 90%;
+        height: 300px;
+        margin-top: 30px;
+        left: 5%;
+        position: relative;
+        border-radius: 3px;
+    }
+    .tiempo .lugar {
+        width: 90%;
+        margin-top: 20px;
+        display: flex;
+        text-align: center;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+    .ministery {
+        display: flex;
+        justify-content: center;
+    }
+    #slider {
+        width: 90%;
+        margin: auto;
+        overflow: hidden;
+    }
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider ease infinite;
+    }
+    #slider figure img {
+        float: left;
+        width: 20%;
+        height: 450px;
+    }
+    
+    .textosfoo {
+        width: 96%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer img {
+        width: 40px;
+        height: 29px;
+        padding: 0 10px;
+    }
+    .redes img {
+        width: 45px;
+        height: 25px;
+    }
+    .footer h3 {
+        font-size: 20px;
+        color: white;
+        margin-top: 30px;
+    }
+    .footer h2 {
+        font-size: 20px;
+        color: white;
+        margin-top: 30px;
+    }
+    .footer p {
+        color: white;
+        margin-top: 10px;
+    }
+    .contacto {
+        width: 90%;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .redes {
+        margin-bottom: 20px;
+    }
+    .social {
+        margin-bottom: 10px;
+    }
+}
+
+
+@media screen and (max-width:500px) {
+    p {
+        font-size: 16.5px;
+        font-weight: 300;
+        color: #444141;
+    }
+    .banner span img{
+        width: 25px;
+        height: 25px;
+        margin-top: 150px;
+        left: 50%;
+        position: relative;
+    }
+    .banner img {
+        width: 150px;
+        height: 160px;
+    }
+    .textos-header {
+        height: 60vh;
+    }
+    .textos-header h2 {
+        font-size: 30px;
+    }
+    .textos-header h1 {
+        font-size: 37px;
+    }
+    nav ul li a {
+        font-size: 18px;
+    }
+    #menubtn {
+        width: 35px;
+        height: 35px;
+        text-align: center;
+        position: fixed;
+        right: 25px;
+        top: 20px;
+        border-radius: 3px;
+        z-index: 3;
+        cursor: pointer;
+    }
+    #menubtn img {
+        width: 22px;
+        margin-top: 10px;
+    }
+    nav ul li {
+        list-style: none;
+        margin: 28px 15px;
+    }
+    .bienvenidos h2 {
+        font-weight: 600;
+        font-size: 33px;
+        margin-top: 30px;
+    }
+    .nuestra h2 {
+        text-align: center;
+        align-items: center;
+        font-size: 28px;
+        color: #3f51b5;
+        font-weight: 400;
+        margin-top: 40px;
+        letter-spacing: 0.5px;
+    }
+    .quienes-somos {
+        width: 90%;
+        margin: auto;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: column;
+    }
+    .quienes-somos h3 {
+        font-size: 23.5px;
+        margin-bottom: 12px;
+        color: #3f51b5;
+    }
+    .iglesia {
+        margin: auto;
+        width: 100%;
+    }
+    .pastores {
+        margin: auto;
+        width: 100%;
+        margin-top: 30px;
+    }
+    .iglesia p {
+        width: 100%;
+    }
+    .pastores p {
+        width: 100%;
+    }
+    .quienes-somos .pastores img {
+        width: 70%;
+        height: 160px;
+        margin-top: 15px;
+    }
+    .grey {
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(./imagenes/vision-uno.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+    }
+      .horarios {
+        width: 90%;
+        margin: auto;
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+    }
+    .horarios h3 {
+        font-size: 23.5px;
+        margin-bottom: 12px;
+        color: #170aca;
+    }
+    .time {
+        width: 100%;
+    }
+    .kids {
+        width: 100%;
+        text-align: right;
+        margin-top: 25px;
+    }
+    .tiempo img {
+        object-fit: cover;
+        width: 90%;
+        height: 250px;
+        margin-top: 30px;
+        left: 5%;
+        position: relative;
+        border-radius: 3px;
+    }
+    .ministery {
+        width: 90%;
+        margin: auto;
+        margin-top: 10px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .ministerios {
+        width: 100%;
+        margin: auto;
+        border-radius: 3px;
+        padding: 20px 0;
+        margin: 20px 0; 
+    }
+    .ministerios h3 {
+        margin: auto;
+        width: 95%;
+        font-size: 23.5px;
+        color: #170aca;
+    }
+    .ministerios p {
+        margin: auto;
+        margin-top: 10px;
+        width: 95%;
+    }
+    #slider {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider ease infinite;
+    }
+    #slider figure img {
+        float: left;
+        width: 20%;
+        height: 340px;
+    }
+    .footer {
+        margin-top: 50px;
+        width: 100%;
+    }
+    .textosfoo {
+        width: 97%;
+        margin: auto;
+        display: flex;
+        flex-direction: column;
+    }
+    .footer img {
+        width: 39px;
+        height: 27px;
+        padding: 0 10px;
+    }
+    .redes img {
+        width: 45px;
+        height: 25px;
+    }
+    .footer h3 {
+        font-size: 20px;
+        color: white;
+        margin-top: 30px;
+    }
+    .footer h2 {
+        font-size: 20px;
+        color: white;
+        margin-top: 30px;
+    }
+    .footer p {
+        color: white;
+        margin-top: 10px;
+    }
+    .contacto {
+        width: 90%;
+        margin: 30px 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .redes {
+        margin-bottom: 20px;
+    }
+    .social {
+        margin-bottom: 10px;
+    }
+    .biblia h3 {
+        font-size: 22px;
+    }
+}
+
+
+@media screen and (max-width:430px) {
+    .grey {
+        width: 100%;
+        background: linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)) , url(./imagenes/vision-uno.jpg);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        object-fit: cover;
+      }
+      .quienes-somos .pastores img {
+        width: 75%;
+        height: 140px;
+        margin-top: 15px;
+    }
+    #slider {
+        width: 100%;
+        margin: auto;
+        overflow: hidden;
+    }
+    #slider figure {
+        position: relative;
+        width: 500%;
+        margin: 0;
+        left: 0;
+        animation: 20s slider ease infinite;
+    }
+    #slider figure img {
+        float: left;
+        width: 20%;
+        height: 330px;
+    }
+}
+
+@media screen and (max-width:350px) {
+    #slider figure img {
+        float: left;
+        width: 20%;
+        height: 320px;
+    }
+    .tiempo img {
+        object-fit: cover;
+        width: 90%;
+        height: 230px;
+        margin-top: 30px;
+        left: 5%;
+        position: relative;
+        border-radius: 3px;
+    }
+}
+
+@media screen and (max-width:300px) {
+    .textos-header h2 {
+        font-size: 30px;
+    }
+    .textos-header h1 {
+        font-size: 35px;
+    }
+}
