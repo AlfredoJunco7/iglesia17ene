@@ -78,7 +78,7 @@ video {
     width: 90%;
     margin: auto;
     text-align: center;
-    font-size: 24px;
+    font-size: 34px;
     font-family: cursive;
     padding: 20px 0 10px 0;
 }
@@ -89,7 +89,7 @@ video {
 main {
     width: 95%;
     margin: auto;
-    padding: 20px 0 0 0;
+    padding: 50px 0 0 0;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -183,7 +183,7 @@ main {
         width: 90%;
         margin: auto;
         text-align: center;
-        font-size: 24px;
+        font-size: 30px;
         font-family: cursive;
         padding: 20px 0 10px 0;
     }
@@ -258,13 +258,14 @@ main {
         width: 90%;
         margin: auto;
         text-align: center;
-        font-size: 20px;
+        font-size: 26px;
         font-family: cursive;
         padding: 20px 0 10px 0;
     }
     main {
         width: 90%;
         margin: auto;
+        padding: 40px 0 0 0;
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
@@ -379,7 +380,7 @@ main {
         width: 90%;
         margin: auto;
         text-align: center;
-        font-size: 21px;
+        font-size: 24px;
         font-family: cursive;
         padding: 20px 0 10px 0;
     }
