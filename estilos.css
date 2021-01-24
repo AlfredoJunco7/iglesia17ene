@@ -40,6 +40,7 @@ p {
     font-size: 45px;
     font-family: cursive;
     font-weight: 300;
+    z-index: 2;
     text-align: center;
     width: 95%;
     animation: moverDerecha 2s ease-in;
@@ -48,6 +49,7 @@ p {
     color: rgb(0, 0, 180);
     font-size: 60px;
     font-weight: 400;
+    z-index: 2;
     text-align: center;
     width: 95%;
     animation: moverIzquierda 2s ease-in;
@@ -55,6 +57,7 @@ p {
 .banner img {
     width: 190px;
     height: 210px;
+    z-index: 2;
 }
 .banner span img{
     width: 30px;
